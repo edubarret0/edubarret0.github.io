@@ -1,0 +1,163 @@
+{
+  "main": {
+    "id": "cf0ea5dfe216d28b",
+    "type": "split",
+    "children": [
+      {
+        "id": "03f4227df73a7f2c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f4b89819ace145a8",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/Drawing 2024-10-08 22.55.34.excalidraw.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "8a363743371ff7df",
+    "type": "split",
+    "children": [
+      {
+        "id": "6ca489d97f8993e2",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "70f5b96198350520",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "fa245264526adce1",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "31548ce41774be7a",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "f167b1b9a5222ffa",
+    "type": "split",
+    "children": [
+      {
+        "id": "42e7191f21cf907e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6cfce5af3f07212e",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Excalidraw/Drawing 2024-10-08 22.55.34.excalidraw.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "b1f9e4930b5c5595",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Excalidraw/Drawing 2024-10-08 22.55.34.excalidraw.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "975225df55eedc40",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "88b9d514b0405f01",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Excalidraw/Drawing 2024-10-08 22.55.34.excalidraw.md"
+              }
+            }
+          },
+          {
+            "id": "1fff05a755e15946",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Abrir a troca rápida": false,
+      "graph:Abrir visualização em gráfico": false,
+      "canvas:Criar novo canvas": false,
+      "daily-notes:Abrir a nota de hoje": false,
+      "templates:Inserir modelo": false,
+      "command-palette:Abrir paleta de comandos": false,
+      "obsidian-kanban:Criar um novo quadro": false,
+      "obsidian-git:Open Git source control": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false
+    }
+  },
+  "active": "f4b89819ace145a8",
+  "lastOpenFiles": [
+    "Excalidraw/Drawing 2024-10-08 22.55.34.excalidraw.md",
+    "Excalidraw"
+  ]
+}
