@@ -113,7 +113,7 @@
               "type": "tag",
               "state": {
                 "sortOrder": "frequency",
-                "useHierarchy": true
+                "useHierarchy": false
               }
             }
           },
@@ -126,7 +126,14 @@
                 "file": "Excalidraw/Drawing 2024-10-08 22.55.34.excalidraw.md"
               }
             }
-          },
+          }
+        ],
+        "currentTab": 2
+      },
+      {
+        "id": "3254cd6630291895",
+        "type": "tabs",
+        "children": [
           {
             "id": "1fff05a755e15946",
             "type": "leaf",
@@ -139,8 +146,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 325.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -155,7 +161,7 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "f4b89819ace145a8",
+  "active": "975225df55eedc40",
   "lastOpenFiles": [
     "Excalidraw/Drawing 2024-10-08 22.55.34.excalidraw.md",
     "Excalidraw"
