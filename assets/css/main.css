@@ -1,19 +1,65 @@
 /* ====== Temas Claro e Escuro ====== */
 /* Cores inspiradas no GitHub profissional */
+/* ====== Temas Modernos ====== */
 .theme-dark {
-	--bg: #0d1117;
-	--fg: #c9d1d9;
-	--accent: #58a6ff;
-	--card-bg: #161b22;
-	--border: #30363d;
+	--bg: #282a36; /* Dracula background */
+	--fg: #f8f8f2; /* Dracula foreground */
+	--accent: #bd93f9; /* Dracula purple */
+	--card-bg: #44475a; /* Dracula card */
+	--border: #6272a4; /* Dracula border */
 }
 .theme-light {
-	--bg: #f6f8fa;
-	--fg: #24292f;
+	--bg: #fff;
+	--fg: #222;
 	--accent: #0969da;
-	--card-bg: #ffffff;
-	--border: #d0d7de;
+	--card-bg: #f6f8fa;
+	--border: #e0e0e0;
 }
+body.theme-dark, body.theme-light {
+	background: var(--bg);
+	color: var(--fg);
+	font-family: 'Segoe UI', 'Roboto', 'Arial', sans-serif;
+	transition: background 0.3s, color 0.3s;
+}
+#main, #wrapper, .avatar, .copyright, .icons {
+	background: var(--card-bg) !important;
+	color: var(--fg) !important;
+	border-radius: 16px;
+	box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+	border: 1px solid var(--border);
+}
+a {
+	color: var(--accent);
+	transition: color 0.3s;
+}
+#theme-toggle {
+	background: var(--card-bg);
+	color: var(--fg);
+	border: 1px solid var(--border);
+	font-weight: 600;
+	box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+.avatar img {
+	border-radius: 50%;
+	border: 4px solid var(--accent);
+	box-shadow: 0 2px 16px rgba(0,0,0,0.12);
+}
+h1, h2, h3 {
+	font-weight: 700;
+	letter-spacing: 0.5px;
+}
+.icons li a {
+	font-size: 1.2rem;
+	padding: 0.5rem 1rem;
+	border-radius: 8px;
+	background: transparent;
+	transition: background 0.2s;
+}
+.icons li a:hover {
+	background: var(--accent);
+	color: #fff;
+}
+/* ====== Fim dos temas ====== */
 body.theme-dark, body.theme-light {
 	background: var(--bg);
 	color: var(--fg);
