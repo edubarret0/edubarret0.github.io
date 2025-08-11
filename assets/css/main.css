@@ -1,20 +1,50 @@
 /* ====== Layout Moderno ====== */
-.container {
-	display: flex;
-	min-height: 100vh;
-	background: var(--bg);
-	color: var(--fg);
-	font-family: 'Segoe UI', 'Roboto', 'Arial', sans-serif;
+:root {
+  /* Tema claro (padrão) */
+  --bg: #ffffff;
+  --fg: #24292f;
+  --accent: #0969da;
+  --card-bg: #f6f8fa;
+  --border: #d0d7de;
+  --icon: #57606a;
+  --icon-hover: #0969da;
 }
+
+body.theme-dark {
+  /* Tema escuro (Dracula) */
+  --bg: #282a36;
+  --fg: #f8f8f2;
+  --accent: #bd93f9;
+  --card-bg: #44475a;
+  --border: #6272a4;
+  --icon: #f8f8f2;
+  --icon-hover: #bd93f9;
+}
+
+.container {
+  display: flex;
+  min-height: 100vh;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: 'Segoe UI', 'Roboto', 'Arial', sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
 .sidebar {
-	width: 320px;
-	background: var(--card-bg);
-	padding: 2rem 1.5rem;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	border-right: 1px solid var(--border);
-	box-shadow: 2px 0 16px rgba(0,0,0,0.08);
+  width: 340px;
+  background: var(--card-bg);
+  padding: 2rem;
+  border-radius: 16px;
+  position: sticky;
+  top: 2rem;
+  height: fit-content;
+  margin-right: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 .sidebar-avatar img {
 	border-radius: 50%;
