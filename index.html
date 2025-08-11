@@ -8,7 +8,7 @@
 	<link rel="stylesheet" href="assets/css/main.css">
 	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
 </head>
-<body class="theme-dark">
+<body>
 	<div class="container">
 		<aside class="sidebar">
 			<div class="sidebar-avatar">
@@ -18,7 +18,7 @@
 			<p class="sidebar-bio">Desenvolvedor | Engenheiro | Criador de conteúdo</p>
 			<ul class="sidebar-info">
 				<li><i class="fa fa-map-marker"></i> Brasil</li>
-				<li><i class="fa fa-envelope"></i> edubarret0@gmail.com</li>
+				<li><i class="fa fa-envelope"></i> edubarret0dev@gmail.com</li>
 				<li><i class="fa fa-link"></i> <a href="https://github.com/edubarret0" target="_blank">github.com/edubarret0</a></li>
 			</ul>
 			<ul class="sidebar-social">
@@ -77,20 +77,19 @@
 	<script>
 		// Alternância de tema claro/escuro
 		const themeToggle = document.getElementById('theme-toggle');
-		const body = document.body;
 		function setTheme(theme) {
-			body.classList.remove('theme-light', 'theme-dark');
-			body.classList.add(theme);
+			document.body.classList.remove('theme-light', 'theme-dark');
+			document.body.classList.add(theme);
 			localStorage.setItem('theme', theme);
 			themeToggle.textContent = theme === 'theme-dark' ? '🌙 Mudar tema' : '☀️ Mudar tema';
 		}
 		themeToggle.addEventListener('click', () => {
-			const current = body.classList.contains('theme-dark') ? 'theme-dark' : 'theme-light';
+			const current = document.body.classList.contains('theme-dark') ? 'theme-dark' : 'theme-light';
 			setTheme(current === 'theme-dark' ? 'theme-light' : 'theme-dark');
 		});
 		// Carregar preferência do usuário
 		const savedTheme = localStorage.getItem('theme');
-		if (savedTheme) setTheme(savedTheme);
+		setTheme(savedTheme ? savedTheme : 'theme-dark');
 	</script>
 </body>
 </html>
