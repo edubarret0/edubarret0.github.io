@@ -15,10 +15,13 @@
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
-	<body class="is-loading">
+	<body class="is-loading theme-dark">
 
 		<!-- Wrapper -->
 			<div id="wrapper">
+
+				<!-- Botão de alternância de tema -->
+				<button id="theme-toggle" aria-label="Alternar tema" style="position:absolute;top:1rem;right:1rem;z-index:1000;padding:0.5rem 1rem;border-radius:8px;border:none;background:#222;color:#fff;cursor:pointer;font-size:1rem;transition:background 0.3s;">🌙 Mudar tema</button>
 
 				<!-- Main -->
 					<section id="main">
@@ -87,10 +90,28 @@
 		<!-- Scripts -->
 			<!--[if lte IE 8]><script src="assets/js/respond.min.js"></script><![endif]-->
 			<script>
+				// Remove is-loading após carregamento
 				if ('addEventListener' in window) {
 					window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-loading\b/, ''); });
 					document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
 				}
+
+				// Alternância de tema claro/escuro
+				const themeToggle = document.getElementById('theme-toggle');
+				const body = document.body;
+				function setTheme(theme) {
+					body.classList.remove('theme-light', 'theme-dark');
+					body.classList.add(theme);
+					localStorage.setItem('theme', theme);
+					themeToggle.textContent = theme === 'theme-dark' ? '🌙 Mudar tema' : '☀️ Mudar tema';
+				}
+				themeToggle.addEventListener('click', () => {
+					const current = body.classList.contains('theme-dark') ? 'theme-dark' : 'theme-light';
+					setTheme(current === 'theme-dark' ? 'theme-light' : 'theme-dark');
+				});
+				// Carregar preferência do usuário
+				const savedTheme = localStorage.getItem('theme');
+				if (savedTheme) setTheme(savedTheme);
 			</script>
 
 	</body>

@@ -1,3 +1,41 @@
+/* ====== Temas Claro e Escuro ====== */
+/* Cores inspiradas no GitHub profissional */
+.theme-dark {
+	--bg: #0d1117;
+	--fg: #c9d1d9;
+	--accent: #58a6ff;
+	--card-bg: #161b22;
+	--border: #30363d;
+}
+.theme-light {
+	--bg: #f6f8fa;
+	--fg: #24292f;
+	--accent: #0969da;
+	--card-bg: #ffffff;
+	--border: #d0d7de;
+}
+body.theme-dark, body.theme-light {
+	background: var(--bg);
+	color: var(--fg);
+	transition: background 0.3s, color 0.3s;
+}
+#main, #wrapper, .avatar, .copyright, .icons {
+	background: var(--card-bg) !important;
+	color: var(--fg) !important;
+	border-radius: 12px;
+	box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+	border: 1px solid var(--border);
+}
+a {
+	color: var(--accent);
+	transition: color 0.3s;
+}
+#theme-toggle {
+	background: var(--card-bg);
+	color: var(--fg);
+	border: 1px solid var(--border);
+}
+/* ====== Fim dos temas ====== */
 @charset "UTF-8";
 @import url(font-awesome.min.css);
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300");
