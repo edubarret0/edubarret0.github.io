@@ -1,119 +1,115 @@
-<!DOCTYPE HTML>
-<!--
-	Identity by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Eduardo Barreto</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<!--[if lte IE 8]><script src="assets/js/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
-		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-loading theme-dark">
 
-		<!-- Wrapper -->
-			<div id="wrapper">
-
-				<!-- Botão de alternância de tema -->
-				<button id="theme-toggle" aria-label="Alternar tema">🌙 Mudar tema</button>
-
-				<!-- Main -->
-					<section id="main">
-						<header style="display:flex;flex-direction:column;align-items:center;gap:1rem;padding:2rem 0 1rem 0;">
-							<span class="avatar"><img src="images/avatar.jpg" alt="Foto de Eduardo Barreto" width="120" height="120" /></span>
-							<h1 style="margin:0;font-size:2.2rem;">Eduardo Barreto</h1>
-							<p style="margin:0;font-size:1.1rem;opacity:0.8;">Desenvolvedor | Engenheiro | Criador de conteúdo</p>
-						</header>
-						<!--
-						<hr />
-						<h2>Extra Stuff!</h2>
-						<form method="post" action="#">
-							<div class="field">
-								<input type="text" name="name" id="name" placeholder="Name" />
-							</div>
-							<div class="field">
-								<input type="email" name="email" id="email" placeholder="Email" />
-							</div>
-							<div class="field">
-								<div class="select-wrapper">
-									<select name="department" id="department">
-										<option value="">Department</option>
-										<option value="sales">Sales</option>
-										<option value="tech">Tech Support</option>
-										<option value="null">/dev/null</option>
-									</select>
-								</div>
-							</div>
-							<div class="field">
-								<textarea name="message" id="message" placeholder="Message" rows="4"></textarea>
-							</div>
-							<div class="field">
-								<input type="checkbox" id="human" name="human" /><label for="human">I'm a human</label>
-							</div>
-							<div class="field">
-								<label>But are you a robot?</label>
-								<input type="radio" id="robot_yes" name="robot" /><label for="robot_yes">Yes</label>
-								<input type="radio" id="robot_no" name="robot" /><label for="robot_no">No</label>
-							</div>
-							<ul class="actions">
-								<li><a href="#" class="button">Get Started</a></li>
-							</ul>
-						</form>
-						<hr />
-						-->
-						<footer>
-							<ul class="icons">
-								<li><a href="https://https://x.com/eduBarret0" target="_blank" class="fa-twitter" title="Twitter"><i class="fa fa-twitter"></i> Twitter</a></li>
-								<li><a href="https://www.instagram.com/engedubarreto/?hl=pt-br" target="_blank" class="fa-instagram" title="Instagram"><i class="fa fa-instagram"></i> Instagram</a></li>
-								<li><a href="https://www.facebook.com/eduardo.barreto.9277583" target="_blank" class="fa-facebook" title="Facebook"><i class="fa fa-facebook"></i> Facebook</a></li>
-								<li><a href="https://www.youtube.com/channel/UCKlvq21jNbikjJzZiufVNwQ?view_as=subscriber" target="_blank" class="fa-youtube" title="Youtube"><i class="fa fa-youtube"></i> Youtube</a></li>
-								<li><a href="https://www.linkedin.com/in/eduardo-barreto-244575b4/" target="_blank" class="fa-linkedin" title="Linkedin"><i class="fa fa-linkedin"></i> Linkedin</a></li>
-							</ul>
-						</footer>
-					</section>
-
-				<!-- Footer -->
-					<footer id="footer">
-						<ul class="copyright" style="text-align:center;opacity:0.7;font-size:0.95rem;">
-							<li>&copy; edubarret0 Oficial</li>
-							<li>2025</li>
-						</ul>
-					</footer>
-
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Eduardo Barreto | Perfil Profissional</title>
+	<link rel="stylesheet" href="assets/css/main.css">
+	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+</head>
+<body class="theme-dark">
+	<div class="container">
+		<aside class="sidebar">
+			<div class="sidebar-avatar">
+				<img src="images/avatar.jpg" alt="Eduardo Barreto" width="120" height="120">
 			</div>
-
-		<!-- Scripts -->
-			<!--[if lte IE 8]><script src="assets/js/respond.min.js"></script><![endif]-->
-			<script>
-				// Remove is-loading após carregamento
-				if ('addEventListener' in window) {
-					window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-loading\b/, ''); });
-					document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
-				}
-
-				// Alternância de tema claro/escuro
-				const themeToggle = document.getElementById('theme-toggle');
-				const body = document.body;
-				function setTheme(theme) {
-					body.classList.remove('theme-light', 'theme-dark');
-					body.classList.add(theme);
-					localStorage.setItem('theme', theme);
-					themeToggle.textContent = theme === 'theme-dark' ? '🌙 Mudar tema' : '☀️ Mudar tema';
-				}
-				themeToggle.addEventListener('click', () => {
-					const current = body.classList.contains('theme-dark') ? 'theme-dark' : 'theme-light';
-					setTheme(current === 'theme-dark' ? 'theme-light' : 'theme-dark');
-				});
-				// Carregar preferência do usuário
-				const savedTheme = localStorage.getItem('theme');
-				if (savedTheme) setTheme(savedTheme);
-			</script>
-
-	</body>
+			<h2 class="sidebar-name">Eduardo Barreto</h2>
+			<p class="sidebar-bio">Desenvolvedor | Engenheiro | Criador de conteúdo</p>
+			<ul class="sidebar-info">
+				<li><i class="fa fa-map-marker"></i> Brasil</li>
+				<li><i class="fa fa-envelope"></i> edubarret0@gmail.com</li>
+				<li><i class="fa fa-link"></i> <a href="https://github.com/edubarret0" target="_blank">github.com/edubarret0</a></li>
+			</ul>
+			<ul class="sidebar-social">
+				<li><a href="https://twitter.com/EduBarret0" target="_blank" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+				<li><a href="https://www.instagram.com/engedubarreto/?hl=pt-br" target="_blank" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+				<li><a href="https://www.facebook.com/eduardo.barreto.9277583" target="_blank" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+				<li><a href="https://www.youtube.com/channel/UCKlvq21jNbikjJzZiufVNwQ?view_as=subscriber" target="_blank" title="Youtube"><i class="fa fa-youtube"></i></a></li>
+				<li><a href="https://www.linkedin.com/in/eduardo-barreto-244575b4/" target="_blank" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+			</ul>
+			<div class="sidebar-achievements">
+				<span class="badge badge-blue"><i class="fa fa-trophy"></i> Destaque</span>
+				<span class="badge badge-purple"><i class="fa fa-star"></i> Pro</span>
+			</div>
+			<button id="theme-toggle" aria-label="Alternar tema">🌙 Mudar tema</button>
+		</aside>
+		<main class="main-content">
+			<section class="banner">
+				<img src="banner.svg" alt="Banner" style="width:100%;border-radius:16px;">
+				<h1 class="banner-title">Olá, eu sou Eduardo Barreto</h1>
+				<p class="banner-desc">Sou apaixonado por tecnologia, desenvolvimento web e engenharia. Sempre buscando aprender e compartilhar conhecimento!</p>
+			</section>
+			<section class="tech-stack">
+				<h2>Technology Stack <span>🐧</span></h2>
+				<div class="tech-icons">
+					<span class="badge badge-blue">C</span>
+					<span class="badge badge-blue">C++</span>
+					<span class="badge badge-yellow">Java</span>
+					<span class="badge badge-cyan">HTML5</span>
+					<span class="badge badge-cyan">CSS3</span>
+					<span class="badge badge-purple">Bootstrap</span>
+					<span class="badge badge-yellow">JavaScript</span>
+					<span class="badge badge-green">Node.js</span>
+					<span class="badge badge-orange">React</span>
+					<span class="badge badge-green">MongoDB</span>
+					<span class="badge badge-black">Git</span>
+				</div>
+			</section>
+			<section class="github-stats">
+				<h2>My Github Stats <span>🐙</span></h2>
+				<div class="stats-cards">
+					<div class="stats-card">
+						<h3>Stats</h3>
+						<ul>
+							<li>Total Stars: <b>7</b></li>
+							<li>Total Commits (2024): <b>397</b></li>
+							<li>Total PRs: <b>106</b></li>
+							<li>Total Issues: <b>38</b></li>
+							<li>Contributed to: <b>33</b></li>
+						</ul>
+						<div class="stats-grade">A+</div>
+					</div>
+					<div class="stats-card">
+						<h3>Most Used Languages</h3>
+						<ul>
+							<li>JavaScript <span>63.01%</span></li>
+							<li>C++ <span>7.37%</span></li>
+							<li>Java <span>3.26%</span></li>
+						</ul>
+					</div>
+					<div class="stats-card">
+						<h3>Contribuições</h3>
+						<ul>
+							<li>Total: <b>888</b></li>
+							<li>Streak: <b>1</b></li>
+							<li>Longest Streak: <b>145</b></li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<footer class="main-footer">
+				<p>&copy; 2025 edubarret0. Todos os direitos reservados.</p>
+			</footer>
+		</main>
+	</div>
+	<script>
+		// Alternância de tema claro/escuro
+		const themeToggle = document.getElementById('theme-toggle');
+		const body = document.body;
+		function setTheme(theme) {
+			body.classList.remove('theme-light', 'theme-dark');
+			body.classList.add(theme);
+			localStorage.setItem('theme', theme);
+			themeToggle.textContent = theme === 'theme-dark' ? '🌙 Mudar tema' : '☀️ Mudar tema';
+		}
+		themeToggle.addEventListener('click', () => {
+			const current = body.classList.contains('theme-dark') ? 'theme-dark' : 'theme-light';
+			setTheme(current === 'theme-dark' ? 'theme-light' : 'theme-dark');
+		});
+		// Carregar preferência do usuário
+		const savedTheme = localStorage.getItem('theme');
+		if (savedTheme) setTheme(savedTheme);
+	</script>
+</body>
 </html>
