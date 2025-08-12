@@ -81,12 +81,17 @@ Acreditamos que o conhecimento em DevOps deve ser acessível a todos. Nossos val
 
 ## 🤝 Conecte-se Comigo
 
-<div align="center">
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/eduardo-barreto-244575b4)
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/edubarret0)
-[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:edubarret0dev@gmail.com)
-
+<div align="center" style="display:flex;justify-content:center;align-items:center;gap:1.2rem;flex-wrap:wrap;margin:1.5rem 0;">
+  <a href="https://linkedin.com/in/eduardo-barreto-244575b4" target="_blank" title="LinkedIn">
+    <img src="https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" style="height:40px;vertical-align:middle;">
+  </a>
+  <a href="https://github.com/edubarret0" target="_blank" title="GitHub">
+    <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" style="height:40px;vertical-align:middle;">
+  </a>
+  <a href="mailto:edubarret0dev@gmail.com" title="Email">
+    <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" style="height:40px;vertical-align:middle;">
+  </a>
 </div>
 
 ---
