@@ -82,15 +82,15 @@ Acreditamos que o conhecimento em DevOps deve ser acessível a todos. Nossos val
 ## 🤝 Conecte-se Comigo
 
 
-<div align="center" style="display:flex;justify-content:center;align-items:center;gap:1.2rem;flex-wrap:wrap;margin:1.5rem 0;">
-  <a href="https://linkedin.com/in/eduardo-barreto-244575b4" target="_blank" title="LinkedIn">
-    <img src="https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" style="height:40px;vertical-align:middle;">
+<div align="center" style="display:flex;justify-content:center;align-items:center;gap:1.2rem;margin:1.5rem 0;">
+  <a href="https://linkedin.com/in/eduardo-barreto-244575b4" target="_blank" title="LinkedIn" style="background:#0077B5;color:#fff;padding:0.6em 1.4em;border-radius:8px;font-weight:600;text-decoration:none;font-family:Roboto,Segoe UI,sans-serif;box-shadow:0 2px 8px rgba(0,0,0,0.07);margin:0 0.3em;display:inline-block;transition:background 0.2s;">
+    <i class="fa fa-linkedin" style="margin-right:0.5em;"></i>LINKEDIN
   </a>
-  <a href="https://github.com/edubarret0" target="_blank" title="GitHub">
-    <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" style="height:40px;vertical-align:middle;">
+  <a href="https://github.com/edubarret0" target="_blank" title="GitHub" style="background:#181717;color:#fff;padding:0.6em 1.4em;border-radius:8px;font-weight:600;text-decoration:none;font-family:Roboto,Segoe UI,sans-serif;box-shadow:0 2px 8px rgba(0,0,0,0.07);margin:0 0.3em;display:inline-block;transition:background 0.2s;">
+    <i class="fa fa-github" style="margin-right:0.5em;"></i>GITHUB
   </a>
-  <a href="mailto:edubarret0dev@gmail.com" title="Email">
-    <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" style="height:40px;vertical-align:middle;">
+  <a href="mailto:edubarret0dev@gmail.com" title="Email" style="background:#D14836;color:#fff;padding:0.6em 1.4em;border-radius:8px;font-weight:600;text-decoration:none;font-family:Roboto,Segoe UI,sans-serif;box-shadow:0 2px 8px rgba(0,0,0,0.07);margin:0 0.3em;display:inline-block;transition:background 0.2s;">
+    <i class="fa fa-envelope" style="margin-right:0.5em;"></i>EMAIL
   </a>
 </div>
 
