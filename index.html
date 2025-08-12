@@ -65,13 +65,9 @@
 		async function loadMarkdown() {
 			const response = await fetch('profile.md');
 			let markdown = await response.text();
-			// Otimizar imagens do markdown para o perfil do usuário
-			markdown = markdown.replace(/https:\/\/imgur.com\/CvgYNnv.png/g, 'images/avatar.jpg');
-			markdown = markdown.replace(/https:\/\/i.postimg.cc\/jqBZ9NLw\/image-2.png/g, 'images/bg.jpg');
-			markdown = markdown.replace(/https:\/\/imgur.com\/meVJnmd.png/g, 'images/bg.jpg');
 			// Renderizar markdown
 			const mainContent = document.querySelector('.main-content');
-			mainContent.innerHTML = marked.parse(markdown);
+			mainContent.innerHTML = `<div class='markdown-content' style='width:100%;max-width:900px;margin:0 auto;'>${marked.parse(markdown)}</div>`;
 		}
 		loadMarkdown();
 	</script>
