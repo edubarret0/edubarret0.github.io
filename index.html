@@ -1,9 +1,11 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Eduardo Barreto | Perfil Profissional</title>
+	<meta name="description" content="Perfil profissional de Eduardo Barreto, desenvolvedor, engenheiro e DevOps.">
 	<link rel="stylesheet" href="assets/css/style.css">
 	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,7 +16,7 @@
 	<div class="container">
 		<aside class="sidebar">
 			<div class="sidebar-avatar">
-				<img src="images/avatar.jpg" alt="Eduardo Barreto" width="120" height="120">
+				<img src="images/avatar.jpg" alt="Foto de Eduardo Barreto" width="120" height="120" loading="lazy">
 			</div>
 			<h2 class="sidebar-name">Eduardo Barreto</h2>
 			<p class="sidebar-bio">Desenvolvedor | Engenheiro | DevOps</p>
@@ -36,44 +38,9 @@
 			</div>
 			<button id="theme-toggle" aria-label="Alternar tema">🌙 Mudar tema</button>
 		</aside>
-		<main class="main-content">
-					<section class="profile-info">
-						<h1>Hi there <span>👋</span></h1>
-						<p>Este é o espaço onde compartilho projetos open source e exploro novas ideias <span>🤣</span></p>
-						<ul class="profile-links">
-							<li>💻 Software Engineer @<a href="https://redhat.com" target="_blank">RedHat</a></li>
-							<li>🌐 Community leader @<a href="https://duckduckgo.com" target="_blank">DuckDuckGo</a></li>
-						</ul>
-						<div class="profile-contact">
-							<i class="fa fa-map-marker"></i> Brasil &nbsp;|&nbsp;
-							<i class="fa fa-envelope"></i> edubarret0dev@gmail.com
-						</div>
-						<div class="profile-fun">
-							<span>⚡ Fun fact: Eu <span style="color:#e74c3c">💖</span> café!</span>
-						</div>
-						<div class="profile-blog">
-							<h3><i class="fa fa-newspaper-o"></i> Latest Blog Posts</h3>
-							<ul>
-								<li><span style="color:#e74c3c">■</span> <a href="#">God Mode in browsers: document.designMode = "on"</a></li>
-								<li><span style="color:#e74c3c">■</span> <a href="#">Skipping the Chrome "Your connection is not private" warning</a></li>
-								<li><span style="color:#e74c3c">■</span> <a href="#">Microsoft Student Partners – Geek is the new rockstar</a></li>
-								<li><span style="color:#e74c3c">■</span> <a href="#">An Introduction to NumPy</a></li>
-							</ul>
-						</div>
-						<div class="profile-stats" style="margin-top:2rem;">
-							<h3><span style="font-size:1.1rem;">📊 This week I spent my time on</span></h3>
-							<ul style="margin-top:0.7rem;">
-								<li>JavaScript <span style="background:#bd93f9;color:#fff;padding:0.2rem 0.5rem;border-radius:6px;">6 hrs 18 mins</span> <span style="opacity:0.7;">49.49%</span></li>
-								<li>TypeScript <span style="background:#50fa7b;color:#222;padding:0.2rem 0.5rem;border-radius:6px;">2 hrs 33 mins</span> <span style="opacity:0.7;">20.05%</span></li>
-								<li>JSON <span style="background:#ffb86c;color:#222;padding:0.2rem 0.5rem;border-radius:6px;">1 hr 11 mins</span> <span style="opacity:0.7;">9.31%</span></li>
-								<li>HTML <span style="background:#8be9fd;color:#222;padding:0.2rem 0.5rem;border-radius:6px;">47 mins</span> <span style="opacity:0.7;">6.16%</span></li>
-								<li>YAML <span style="background:#f1fa8c;color:#222;padding:0.2rem 0.5rem;border-radius:6px;">38 mins</span> <span style="opacity:0.7;">5.08%</span></li>
-							</ul>
-						</div>
-					</section>
-					<footer class="main-footer">
-						<p style="text-align:center;">&copy; 2025 edubarret0. Todos os direitos reservados.</p>
-					</footer>
+		<main class="main-content" aria-live="polite">
+			<!-- O conteúdo será carregado dinamicamente do profile.md -->
+			<div class="loading" style="text-align:center;opacity:0.7;padding:2rem;">Carregando perfil...</div>
 		</main>
 	</div>
 	<script>
@@ -82,8 +49,6 @@
 		function setTheme(theme) {
 			document.body.classList.remove('theme-light', 'theme-dark');
 			document.body.classList.add(theme);
-			// Substituir localStorage por cookies seguros ou outra abordagem segura
-			// Exemplo de uso seguro:
 			document.cookie = `theme=${theme}; Secure; SameSite=Strict`;
 			themeToggle.textContent = theme === 'theme-dark' ? '🌙 Mudar tema' : '☀️ Mudar tema';
 		}
@@ -97,14 +62,18 @@
 	</script>
 	<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 	<script>
-	    async function loadMarkdown() {
-	        const response = await fetch('profile.md');
-	        const markdown = await response.text();
-	        const mainContent = document.querySelector('.main-content');
-	        mainContent.innerHTML = marked.parse(markdown);
-	    }
-
-	    loadMarkdown();
+		async function loadMarkdown() {
+			const response = await fetch('profile.md');
+			let markdown = await response.text();
+			// Otimizar imagens do markdown para o perfil do usuário
+			markdown = markdown.replace(/https:\/\/imgur.com\/CvgYNnv.png/g, 'images/avatar.jpg');
+			markdown = markdown.replace(/https:\/\/i.postimg.cc\/jqBZ9NLw\/image-2.png/g, 'images/bg.jpg');
+			markdown = markdown.replace(/https:\/\/imgur.com\/meVJnmd.png/g, 'images/bg.jpg');
+			// Renderizar markdown
+			const mainContent = document.querySelector('.main-content');
+			mainContent.innerHTML = marked.parse(markdown);
+		}
+		loadMarkdown();
 	</script>
 </body>
 </html>
