@@ -95,5 +95,16 @@
 		const savedTheme = document.cookie.split('; ').find(row => row.startsWith('theme='));
 		setTheme(savedTheme ? savedTheme.split('=')[1] : 'theme-dark');
 	</script>
+	<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+	<script>
+	    async function loadMarkdown() {
+	        const response = await fetch('profile.md');
+	        const markdown = await response.text();
+	        const mainContent = document.querySelector('.main-content');
+	        mainContent.innerHTML = marked.parse(markdown);
+	    }
+
+	    loadMarkdown();
+	</script>
 </body>
 </html>
