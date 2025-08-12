@@ -4,7 +4,10 @@
 
 [![Desenvolvedor | Engenheiro | DevOps](https://img.shields.io/badge/Desenvolvedor_%7C_Engenheiro_%7C_DevOps-0A0A0A?style=for-the-badge&logo=devops&logoColor=white)](https://github.com/edubarret0)
 
-<img src="https://imgur.com/CvgYNnv.png" alt="aboutme" width="800px">
+<div align="center">
+  <img src="images/banner-top.svg" alt="Banner superior Eduardo Barreto" style="max-width:100%;height:auto;margin-bottom:2rem;">
+  <img src="images/avatar.jpg" alt="Foto de Eduardo Barreto" style="width:160px;height:160px;border-radius:50%;border:4px solid #0969da;box-shadow:0 4px 16px rgba(0,0,0,0.12);margin-bottom:2rem;object-fit:cover;">
+</div>
 
 </div>
 
@@ -43,7 +46,7 @@
 </table>
 
 <div align="center">
-  <img src="https://i.postimg.cc/jqBZ9NLw/image-2.png" alt="DevOps Banner" width="800px">
+  <img src="images/banner-footer.svg" alt="Banner rodapé Eduardo Barreto" style="max-width:100%;height:auto;margin-top:2rem;">
 </div>
 
 ## 🌐 Aprendizado em DevOps
@@ -89,5 +92,5 @@ Acreditamos que o conhecimento em DevOps deve ser acessível a todos. Nossos val
 ---
 
 <div align="center">
-  <img src="https://imgur.com/meVJnmd.png" alt="Footer Banner" width="800px">
+  <img src="images/banner-footer.svg" alt="Banner rodapé Eduardo Barreto" style="max-width:100%;height:auto;margin-top:2rem;">
 </div>
