@@ -4,8 +4,15 @@
   --bg: #ffffff;
   --fg: #24292f;
   --accent: #0969da;
-  --card-bg: #f6f8fa;
-  --border: #d0d7de;
+  --card-bg: #f6.sidebar-social {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  margin: 1.2rem 0 0.5rem 0;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}-border: #d0d7de;
   --icon: #57606a;
   --icon-hover: #0969da;
   --gradient: linear-gradient(90deg, #0969da 0%, #50fa7b 100%);
@@ -128,16 +135,15 @@ a:hover {
 }
 .sidebar-social a {
   color: var(--icon);
-  font-size: 1.6rem;
-  padding: 0.5rem;
+  padding: 0.3rem;
     border-radius: 50%;
     transition: box-shadow 0.2s, background 0.2s, color 0.2s, transform 0.2s;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 38px;
-    height: 38px;
-    font-size: 1.2rem;
+    width: 32px;
+    height: 32px;
+    font-size: 1.1rem;
     background: linear-gradient(135deg, #50fa7b 0%, #0969da 100%);
     box-shadow: 0 4px 16px rgba(80,250,123,0.12), 0 1.5px 8px rgba(9,105,218,0.10);
     position: relative;
