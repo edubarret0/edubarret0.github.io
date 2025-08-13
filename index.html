@@ -38,8 +38,7 @@
 			<button id="theme-toggle" aria-label="Alternar tema">🌙 Mudar tema</button>
 		</aside>
 		<main class="main-content" aria-live="polite" style="flex:1;max-width:900px;margin-left:2rem;">
-			<div id="perfil-profissional" style="margin-bottom:2rem;"></div>
-			<div id="perfil-pessoal"></div>
+			<div id="perfil-profissional"></div>
 		</main>
 	</div>
 	<script>
@@ -61,17 +60,12 @@
 	</script>
 	<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 	<script>
-		async function loadProfiles() {
-			// Perfil profissional (lado direito)
-			const profRes = await fetch('perfil-profissional.md');
-			const profMd = await profRes.text();
-			document.getElementById('perfil-profissional').innerHTML = `<div class='markdown-content' style='width:100%;margin:0 auto;'>${marked.parse(profMd)}</div>`;
-			// Perfil pessoal (lado esquerdo, já na sidebar)
-			const pessoalRes = await fetch('perfil-pessoal.md');
-			const pessoalMd = await pessoalRes.text();
-			document.getElementById('perfil-pessoal').innerHTML = `<div class='markdown-content' style='width:100%;margin:0 auto;'>${marked.parse(pessoalMd)}</div>`;
+		async function loadProfile() {
+			const response = await fetch('perfil-profissional.md');
+			const markdown = await response.text();
+			document.getElementById('perfil-profissional').innerHTML = `<div class='markdown-content' style='width:100%;margin:0 auto;'>${marked.parse(markdown)}</div>`;
 		}
-		loadProfiles();
+		loadProfile();
 	</script>
 </body>
 </html>
