@@ -1,6 +1,3 @@
-# Eduardo Barreto
-
-Desenvolvedor | Engenheiro | DevOps
 
 - **Localização:** Brasil
 - **Email:** edubarret0dev@gmail.com
