@@ -59,20 +59,20 @@ a:hover {
 
 .sidebar {
   width: 340px;
-  background: var(--card-bg);
-  padding: 2rem 1.5rem;
-  border-radius: 20px;
-  position: sticky;
-  top: 2rem;
-  height: fit-content;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
-  border: 1px solid var(--border);
-  gap: 1.2rem;
-}
-
+  .sidebar-social a {
+    color: var(--icon);
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    border-radius: 50%;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: var(--card-bg);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  }
 .sidebar-avatar img {
   width: 120px;
   height: 120px;
@@ -137,10 +137,6 @@ a:hover {
   justify-content: center;
   align-items: center;
 }
-.sidebar-social a {
-  color: var(--icon);
-  font-size: 1.5rem;
-  padding: 0.5rem;
   border-radius: 50%;
   transition: all 0.3s;
   display: flex;
