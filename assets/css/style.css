@@ -116,7 +116,7 @@ a:hover {
 .sidebar-social {
   display: flex;
   flex-direction: row;
-  gap: 1.2rem;
+  gap: 2rem;
   margin: 1.2rem 0 0.5rem 0;
   flex-wrap: nowrap;
   justify-content: center;
@@ -134,14 +134,6 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 44px;
-  height: 44px;
-  background: var(--card-bg);
-  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
-  position: relative;
-  z-index: 1;
-}
-.sidebar-social a:hover {
   color: var(--icon-hover);
   background: var(--gradient);
   box-shadow: 0 6px 16px rgba(0,0,0,0.12);
