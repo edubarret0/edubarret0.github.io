@@ -45,7 +45,7 @@
 </table>
 
 <div align="center">
-  <img src="images/banner-footer.svg" alt="Banner rodapé Eduardo Barreto" style="max-width:100%;height:auto;margin-top:2rem;">
+  <img src="images/banner.svg" alt="Banner rodapé Eduardo Barreto" style="max-width:100%;height:auto;margin-top:2rem;">
 </div>
 
 ## 🌐 Aprendizado em DevOps
