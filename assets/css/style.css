@@ -59,29 +59,20 @@ a:hover {
 
 .sidebar {
   width: 340px;
-  .sidebar-social a {
-    color: var(--icon);
-    font-size: 1.5rem;
-    padding: 0.5rem;
-    border-radius: 50%;
-    transition: all 0.3s;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 40px;
-    height: 40px;
-    background: var(--card-bg);
-    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
-  }
-.sidebar-avatar img {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  border: 4px solid var(--accent);
-  box-shadow: 0 4px 16px rgba(0,0,0,0.12);
-  object-fit: cover;
-  background: var(--bg);
+  background: var(--card-bg);
+  padding: 2rem 1.5rem;
+  border-radius: 20px;
+  position: sticky;
+  top: 2rem;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  border: 1px solid var(--border);
+  gap: 1.2rem;
 }
+/* Avatar removido da sidebar */
 
 .sidebar-name {
   font-size: 2rem;
@@ -168,25 +159,6 @@ a:hover {
 
 
 
-.sidebar-social {
-  display: flex;
-  flex-direction: row;
-  gap: 1.2rem;
-  margin: 1.2rem 0 0.5rem 0;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;
-}
-  border-radius: 50%;
-  transition: all 0.3s;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 40px;
-  height: 40px;
-  background: var(--card-bg);
-  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
-}
 .sidebar-social a:hover {
   color: var(--icon-hover);
   background: var(--gradient);
@@ -243,6 +215,8 @@ a:hover {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .loading {
