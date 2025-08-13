@@ -129,15 +129,18 @@ a:hover {
   color: var(--icon);
   font-size: 1.6rem;
   padding: 0.5rem;
-  border-radius: 50%;
-  transition: box-shadow 0.2s, background 0.2s, color 0.2s;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--icon-hover);
-  background: var(--gradient);
-  box-shadow: 0 6px 16px rgba(0,0,0,0.12);
-  transform: scale(1.08);
+    border-radius: 50%;
+    transition: box-shadow 0.2s, background 0.2s, color 0.2s, transform 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 52px;
+    height: 52px;
+    background: linear-gradient(135deg, #50fa7b 0%, #0969da 100%);
+    box-shadow: 0 4px 16px rgba(80,250,123,0.12), 0 1.5px 8px rgba(9,105,218,0.10);
+    position: relative;
+    z-index: 1;
+    border: none;
 }
 .sidebar-achievements {
   display: flex;
@@ -169,7 +172,10 @@ a:hover {
   color: var(--icon-hover);
   background: var(--gradient);
   transform: scale(1.08);
-  box-shadow: 0 6px 16px rgba(0,0,0,0.10);
+    color: #fff;
+    background: linear-gradient(135deg, #0969da 0%, #50fa7b 100%);
+    box-shadow: 0 8px 24px rgba(80,250,123,0.18), 0 2px 12px rgba(9,105,218,0.15);
+    transform: scale(1.12) translateY(-4px);
 }
 
 .sidebar-achievements {
