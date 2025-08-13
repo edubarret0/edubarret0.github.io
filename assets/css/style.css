@@ -108,6 +108,46 @@ a:hover {
   flex-direction: column;
   gap: 0.7rem;
 }
+.sidebar-social {
+  display: flex;
+  flex-direction: row;
+  gap: 1.2rem;
+  margin: 1.2rem 0 0.5rem 0;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.sidebar-social li {
+  list-style: none;
+}
+.sidebar-social a {
+  color: var(--icon);
+  font-size: 1.6rem;
+  padding: 0.5rem;
+  border-radius: 50%;
+  transition: box-shadow 0.2s, background 0.2s, color 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background: var(--card-bg);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  position: relative;
+  z-index: 1;
+}
+.sidebar-social a:hover {
+  color: var(--icon-hover);
+  background: var(--gradient);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+  transform: scale(1.08);
+}
+.sidebar-achievements {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin: 1rem 0;
+}
 .sidebar-info li {
   display: flex;
   align-items: center;
