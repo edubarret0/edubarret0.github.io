@@ -6,7 +6,7 @@
 
 <div align="center">
   <img src="images/banner-top.svg" alt="Banner superior Eduardo Barreto" style="max-width:100%;height:auto;margin-bottom:2rem;">
-  <img src="images/avatar.jpg" alt="Foto de Eduardo Barreto" style="width:160px;height:160px;border-radius:50%;border:4px solid #0969da;box-shadow:0 4px 16px rgba(0,0,0,0.12);margin-bottom:2rem;object-fit:cover;">
+  <img src="images/banner-top.svg" alt="Banner tecnológico" style="max-width:100%;height:auto;margin-bottom:2rem;">
 </div>
 
 </div>
