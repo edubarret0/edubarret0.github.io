@@ -1,62 +1,46 @@
-# Eduardo Barreto - Página Pessoal
+# Perfil Profissional - Eduardo Barreto
 
-Bem-vindo ao repositório do site pessoal de **Eduardo Barreto**! Este projeto apresenta informações, redes sociais e recursos visuais de forma responsiva e moderna.
+Este projeto é um portfólio pessoal desenvolvido para apresentar informações profissionais, contatos e redes sociais de forma moderna e responsiva.
 
-## 📄 Sobre o Projeto
+## Tecnologias Utilizadas
 
-Este site foi desenvolvido utilizando o template **Identity by HTML5 UP**, customizado para apresentar o perfil, redes sociais e contato de Eduardo Barreto. O layout é responsivo, compatível com navegadores modernos e antigos (IE8+), e utiliza recursos visuais atrativos.
+- **HTML5**: Estrutura da página e organização dos componentes.
+- **CSS3**: Estilização avançada, incluindo Flexbox para alinhamento, gradientes, responsividade e efeitos visuais.
+- **Markdown**: Utilizado para separar e organizar os conteúdos dos perfis (pessoal e profissional), facilitando futuras edições.
+- **JavaScript**: Carregamento dinâmico dos arquivos markdown e manipulação do DOM.
+- **SVG**: Ícones personalizados e banners para melhor identidade visual.
+- **Git/GitHub**: Controle de versão e hospedagem do projeto.
+- **Dev Container (Ubuntu 24.04.2 LTS)**: Ambiente de desenvolvimento isolado e padronizado.
 
-## 🚀 Funcionalidades
+## Estrutura do Projeto
 
-- Página inicial com foto, nome e redes sociais
-- Design responsivo e moderno
-- Compatibilidade com IE8/IE9
-- Formulário de contato (desabilitado no momento)
-- Ícones sociais (Twitter, Instagram, Facebook, Youtube, Linkedin)
-- Estrutura modular de CSS/SASS para fácil manutenção
+- `/index.html`: Página principal, responsável por exibir o layout e carregar dinamicamente os perfis.
+- `/assets/css/style.css`: Arquivo de estilos, responsável pelo visual moderno, espaçamento, cores e responsividade.
+- `/perfil-profissional.md`: Perfil profissional em markdown, exibido na área principal.
+- `/perfil-pessoal.md`: Perfil pessoal em markdown, utilizado na sidebar (quando necessário).
+- `/images/`: Pasta com avatar, banners e ícones SVG.
+- `/assets/js/`: Scripts para carregamento dinâmico do markdown.
 
-## 🛠️ Tecnologias Utilizadas
+## Como foi feito
 
-- **HTML5**
-- **CSS3** (SASS pré-processado)
-- **Font Awesome** para ícones
-- **JavaScript** para interatividade básica
-- **HTML5 UP** como base de layout
+1. **Layout**: Sidebar à esquerda com avatar, nome, bio, contatos e ícones sociais. Área principal à direita para banners, projetos e informações detalhadas.
+2. **Responsividade**: Utilização de Flexbox e media queries para garantir boa visualização em diferentes dispositivos.
+3. **Visual Moderno**: Gradientes, sombras, ícones SVG e efeitos de hover para melhor UX/UI.
+4. **Conteúdo Dinâmico**: Perfis em markdown carregados via JavaScript, facilitando manutenção e atualização.
+5. **Separação de Perfis**: Perfil pessoal e profissional organizados em arquivos distintos para facilitar futuras pesquisas e adaptações.
+6. **Controle de Versão**: Todo o desenvolvimento foi versionado via Git, permitindo rastreabilidade e colaboração.
 
-## 📁 Estrutura de Pastas
+## Segurança
 
-```
-assets/
-	css/         # Estilos CSS
-	fonts/       # Fontes do projeto
-	js/          # Scripts JS
-	sass/        # Arquivos SASS organizados por módulos
-images/        # Imagens utilizadas no site
-Excalidraw/    # Desenhos e diagramas
-index.html     # Página principal
-```
+Este projeto não possui credenciais sensíveis (senhas, tokens, chaves de API) embutidas no código-fonte. Todas as informações presentes são públicas, como links de redes sociais e e-mail. Recomenda-se sempre evitar o uso de credenciais hardcoded para garantir a segurança do sistema.
 
-## 👤 Autor
+## Para futuras pesquisas
 
-- **Eduardo Barreto**
-	- [Twitter](https://twitter.com/EduBarret0)
-	- [Instagram](https://www.instagram.com/engedubarreto/?hl=pt-br)
-	- [Facebook](https://www.facebook.com/eduardo.barreto.9277583)
-	- [Youtube](https://www.youtube.com/channel/UCKlvq21jNbikjJzZiufVNwQ?view_as=subscriber)
-	- [Linkedin](https://www.linkedin.com/in/eduardo-barreto-244575b4/)
+- O uso de markdown para perfis permite integração fácil com outros sistemas ou exportação para diferentes formatos.
+- O layout modular facilita a inclusão de novas seções, como blog, projetos ou depoimentos.
+- O CSS pode ser expandido para temas claros/escuros ou personalização por usuário.
+- O ambiente dev container garante que o projeto rode de forma idêntica em qualquer máquina compatível com Docker.
 
-## 📜 Licença
+---
 
-Este projeto utiliza o template **HTML5 UP** sob licença [CCA 3.0](https://html5up.net/license). Consulte o arquivo `LICENSE.txt` para mais detalhes.
-
-## 💡 Como usar
-
-1. Clone o repositório:
-	 ```bash
-	 git clone https://github.com/edubarret0/edubarret0.github.io.git
-	 ```
-2. Abra o arquivo `index.html` em seu navegador.
-
-## ✨ Contribuições
-
-Contribuições são bem-vindas! Sinta-se livre para abrir issues ou pull requests.
+Sinta-se à vontade para adaptar, expandir ou pesquisar novas soluções a partir deste projeto!
