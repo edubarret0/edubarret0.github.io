@@ -38,7 +38,25 @@
 				<li><a href="#">E-book: Boas práticas em desenvolvimento</a></li>
 				<!-- Adicione mais downloads conforme necessário -->
 			</ul>
+			<button id="theme-toggle" aria-label="Alternar tema">🌙 Mudar tema</button>
 		</main>
 	</div>
+	<script>
+		const themeToggle = document.getElementById('theme-toggle');
+		function setTheme(theme) {
+			document.body.classList.remove('theme-light', 'theme-dark');
+			document.body.classList.add(theme);
+			document.cookie = `theme=${theme}; Secure; SameSite=Strict`;
+			themeToggle.textContent = theme === 'theme-dark' ? '🌙 Mudar tema' : '☀️ Mudar tema';
+		}
+		if (themeToggle) {
+			themeToggle.addEventListener('click', () => {
+				const current = document.body.classList.contains('theme-dark') ? 'theme-dark' : 'theme-light';
+				setTheme(current === 'theme-dark' ? 'theme-light' : 'theme-dark');
+			});
+			const savedTheme = document.cookie.split('; ').find(row => row.startsWith('theme='));
+			setTheme(savedTheme ? savedTheme.split('=')[1] : 'theme-dark');
+		}
+	</script>
 </body>
 </html>
