@@ -5,8 +5,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Eduardo Barreto | Perfil Profissional</title>
 	<meta name="description" content="Perfil profissional de Eduardo Barreto, desenvolvedor, engenheiro e DevOps.">
-	<link rel="stylesheet" href="assets/css/style.css">
-	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+	<link rel="stylesheet" href="../assets/css/style.css">
+	<link rel="stylesheet" href="../assets/css/font-awesome.min.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -14,7 +14,7 @@
 <body>
 	<div class="container">
 		<aside class="sidebar" style="flex:0 0 360px;">
-			<img src="images/avatar.jpg" alt="Foto de Eduardo Barreto" class="sidebar-avatar">
+			<img src="../images/avatar.jpg" alt="Foto de Eduardo Barreto" class="sidebar-avatar">
 			<h2 class="sidebar-name">Eduardo Barreto</h2>
 			<p class="sidebar-bio">Desenvolvedor | Engenheiro | DevOps</p>
 			<ul class="sidebar-info">
@@ -35,7 +35,7 @@
 				<span class="badge badge-purple"><i class="fa fa-star"></i> Pro</span>
 			</div>
 			<nav class="sidebar-menu">
-				<a href="index.html" class="active">Início</a>
+				<a href="../index.html" class="active">Início</a>
 				<a href="projetos.html">Projetos</a>
 				<a href="artigos.html">Artigos</a>
 				<a href="servicos.html">Serviços</a>
@@ -67,7 +67,7 @@
 	<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 	<script>
 		async function loadProfile() {
-			const response = await fetch('projetos.md');
+			const response = await fetch('../content/projetos.md');
 			const markdown = await response.text();
 			document.getElementById('projetos').innerHTML = `<div class='markdown-content' style='width:100%;margin:0 auto;'>${marked.parse(markdown)}</div>`;
 		}
