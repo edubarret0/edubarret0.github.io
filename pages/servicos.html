@@ -67,9 +67,9 @@
 	<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 	<script>
 		async function loadProfile() {
-			const response = await fetch('perfil-profissional.md');
+			const response = await fetch('servicos.md');
 			const markdown = await response.text();
-			document.getElementById('perfil-profissional').innerHTML = `<div class='markdown-content' style='width:100%;margin:0 auto;'>${marked.parse(markdown)}</div>`;
+			document.getElementById('servicos').innerHTML = `<div class='markdown-content' style='width:100%;margin:0 auto;'>${marked.parse(markdown)}</div>`;
 		}
 		loadProfile();
 	</script>
