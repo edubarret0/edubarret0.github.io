@@ -36,10 +36,10 @@
 			</div>
 			<nav class="sidebar-menu">
 				<a href="index.html" class="active">Início</a>
-				<a href="projetos.html">Projetos</a>
-				<a href="artigos.html">Artigos</a>
-				<a href="servicos.html">Serviços</a>
-				<a href="downloads.html">Downloads</a>
+				<a href="pages/projetos.html">Projetos</a>
+				<a href="pages/artigos.html">Artigos</a>
+				<a href="pages/servicos.html">Serviços</a>
+				<a href="pages/downloads.html">Downloads</a>
 			</nav>
 			<button id="theme-toggle" aria-label="Alternar tema">🌙 Mudar tema</button>
 		</aside>
@@ -67,7 +67,7 @@
 	<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 	<script>
 		async function loadProfile() {
-			const response = await fetch('perfil-profissional.md');
+			const response = await fetch('content/perfil-profissional.md');
 			const markdown = await response.text();
 			document.getElementById('perfil-profissional').innerHTML = `<div class='markdown-content' style='width:100%;margin:0 auto;'>${marked.parse(markdown)}</div>`;
 		}
