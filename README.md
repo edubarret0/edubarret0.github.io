@@ -1,10 +1,10 @@
-# Edu Barret - Portfólio Profissional
+# Eduardo Barreto - Portfólio Profissional
 
-Bem-vindo ao repositório do site pessoal e portfólio profissional de Edu Barret! Este projeto foi desenvolvido para apresentar informações sobre a carreira, projetos, serviços, artigos e downloads de forma organizada e visualmente atraente.
+Bem-vindo ao repositório do site pessoal e portfólio profissional de Eduardo Barreto! Este projeto foi desenvolvido para apresentar informações sobre a carreira, projetos, serviços, artigos e downloads de forma organizada e visualmente atraente.
 
 ## 🌟 Visão Geral
 
-Este site foi projetado com o objetivo de destacar as habilidades e realizações de Edu Barret, proporcionando uma experiência de navegação intuitiva e moderna. Ele inclui:
+Este site foi projetado com o objetivo de destacar as habilidades e realizações de Eduardo Barreto, proporcionando uma experiência de navegação intuitiva e moderna. Ele inclui:
 
 - **Página Inicial**: Uma introdução ao perfil profissional.
 - **Artigos**: Publicações e insights sobre temas relevantes.
