@@ -1,22 +1,64 @@
-Projeto: edubarret0.github.io
+# Edu Barret - Portfólio Profissional
 
-Organização proposta e atualizações aplicadas:
+Bem-vindo ao repositório do site pessoal e portfólio profissional de Edu Barret! Este projeto foi desenvolvido para apresentar informações sobre a carreira, projetos, serviços, artigos e downloads de forma organizada e visualmente atraente.
 
-- `/templates/header.html` e `/templates/footer.html` — fragmentos HTML reutilizáveis.
-- `/assets/js/site.js` — utilitários para incluir templates, carregar markdown e controlar o tema (localStorage).
-- `/pages/*.html` — páginas agora mínimas; carregam conteúdo de `/content/*.md` usando `marked`.
-- `/content/*.md` — conteúdo em Markdown para cada página.
+## 🌟 Visão Geral
 
-Como testar localmente:
+Este site foi projetado com o objetivo de destacar as habilidades e realizações de Edu Barret, proporcionando uma experiência de navegação intuitiva e moderna. Ele inclui:
 
-1. Inicie um servidor estático na raiz do projeto (recomendado: Python 3)
+- **Página Inicial**: Uma introdução ao perfil profissional.
+- **Artigos**: Publicações e insights sobre temas relevantes.
+- **Projetos**: Portfólio de projetos realizados.
+- **Serviços**: Descrição dos serviços oferecidos.
+- **Downloads**: Recursos e materiais disponíveis para download.
 
-```bash
-python3 -m http.server 8000
+## 🛠️ Tecnologias Utilizadas
+
+- **HTML5** e **CSS3**: Para a estrutura e estilização das páginas.
+- **JavaScript**: Para funcionalidades interativas, como alternância de temas e renderização de conteúdo Markdown.
+- **Sass**: Para organização e manutenção eficiente dos estilos.
+- **Font Awesome**: Para ícones modernos e responsivos.
+- **Marked.js**: Para renderização de conteúdo Markdown.
+
+## 🚀 Funcionalidades
+
+- **Renderização de Markdown**: O conteúdo das páginas é gerado dinamicamente a partir de arquivos Markdown.
+- **Alternância de Tema**: Escolha entre tema claro e escuro, com preferência salva em cookies.
+- **Design Responsivo**: Layout adaptável para diferentes dispositivos.
+
+## 📂 Estrutura do Projeto
+
+```
+assets/
+  css/       # Arquivos CSS e imagens relacionadas
+  fonts/     # Fontes utilizadas no projeto
+  js/        # Scripts JavaScript
+  sass/      # Arquivos Sass organizados por componentes e layouts
+content/     # Arquivos Markdown com o conteúdo das páginas
+images/      # Imagens utilizadas no site
+pages/       # Páginas HTML individuais
+templates/   # Templates reutilizáveis (cabeçalho e rodapé)
 ```
 
-2. Abra `http://localhost:8000/pages/projetos.html` e verifique o carregamento do conteúdo e o botão de tema.
+## 🌐 Como Acessar
 
-Notas:
-- A página usa `https://cdn.jsdelivr.net/npm/marked/marked.min.js` para renderizar Markdown.
-- Se preferir, `marked` pode ser baixado para `assets/js/marked.min.js` e referenciado localmente.
+O site está hospedado no GitHub Pages e pode ser acessado pelo seguinte link:
+[Edu Barret - Portfólio Profissional](https://edubarret0.github.io)
+
+## 📝 Como Contribuir
+
+Contribuições são bem-vindas! Siga os passos abaixo para colaborar:
+
+1. Faça um fork deste repositório.
+2. Crie uma branch para sua feature ou correção: `git checkout -b minha-feature`.
+3. Commit suas alterações: `git commit -m 'Minha nova feature'`.
+4. Faça o push para a branch: `git push origin minha-feature`.
+5. Abra um Pull Request.
+
+## 📄 Licença
+
+Este projeto está licenciado sob a licença MIT. Consulte o arquivo `LICENSE.txt` para mais informações.
+
+---
+
+Desenvolvido com 💻 e ☕ por Edu Barret.
