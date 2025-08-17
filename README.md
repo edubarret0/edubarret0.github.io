@@ -61,4 +61,4 @@ Este projeto está licenciado sob a licença MIT. Consulte o arquivo `LICENSE.tx
 
 ---
 
-Desenvolvido com 💻 e ☕ por Edu Barret.
+Desenvolvido com 💻 e ☕ por Eduardo Barreto
