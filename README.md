@@ -1,4 +1,4 @@
-# Eduardo Barreto - Portfólio Profissional
+# Eduardo Barreto 
 
 Bem-vindo ao repositório do site pessoal e portfólio profissional de Eduardo Barreto! Este projeto foi desenvolvido para apresentar informações sobre a carreira, projetos, serviços, artigos e downloads de forma organizada e visualmente atraente.
 
